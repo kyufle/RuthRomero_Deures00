@@ -4,9 +4,7 @@ package com.exercicis;
 public class Exercici0005 {
 
     public static boolean isPalindrom(String text) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        
         return false;
     }
 
