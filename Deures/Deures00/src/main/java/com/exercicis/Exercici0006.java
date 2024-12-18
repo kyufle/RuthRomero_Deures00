@@ -8,25 +8,24 @@ public class Exercici0006 {
         double preuNen = 5.0;
         double preuFinalAdults=10.0;
         double preuFinalGentGran=6.0;
-        double compraFinal = 0.0;
+        
+
+        double compraFinal = (preuNen*numNens) + (preuFinalAdults*numeroAdults) + (preuFinalGentGran*numGrans);
 
         if (dia.equalsIgnoreCase("dimarts")) {
-            compraFinal = (preuNen*numNens)*0.80 + (preuFinalAdults*numeroAdults)*0.80 + (preuFinalGentGran*numGrans)*0.80;
-            return compraFinal;
+            compraFinal *= 0.80;
         }
         
         else if (dia.equalsIgnoreCase("dijous") && numNens > 0 && numeroAdults > 0){
-            double caculEntradaNen = 5*0.50;
-            double dijous = (preuFinalAdults+caculEntradaNen);
-            return dijous;
+            compraFinal -= 5*0.50;
+            compraFinal -= (preuNen*(numNens-1));
         }
         
-        compraFinal = (preuNen*numNens) + (preuFinalAdults*numeroAdults) + (preuFinalGentGran*numGrans);
         return compraFinal;
     }
 
     public static void main(String[] args) {
-        String template = "%-35s%.2f€";
+        String template = "%-25s%.2f€";
         System.out.println(String.format(Locale.US,template,"Cas 1 (2 adults, 2 nens, 1 gran):  ",calculaEntrada(2,2, 1, "dimarts")));
         System.out.println(String.format(Locale.US,template,"Cas 2 (1 adult,  2 nens, 0 grans):  ",calculaEntrada(1,2, 0, "dijous")));
         System.out.println(String.format(Locale.US,template,"Cas 3 (0 adults, 0 nens, 2 grans):  ",calculaEntrada(0,0,2, "dissabte")));
