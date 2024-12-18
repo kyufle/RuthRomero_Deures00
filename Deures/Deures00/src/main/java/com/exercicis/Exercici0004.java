@@ -28,16 +28,16 @@ public class Exercici0004 {
 
     public static String validaContrasenya(String contrasenya) {
         if (contrasenya.length() < 8 || contaMinuscules(contrasenya) < 2 || contaMajuscules(contrasenya)<2){
-            return "La contrasenya \'"+contrasenya+"\': La contrasenya NO és vàlida";
+            return "La contrasenya NO és vàlida";
         }
-        return "La contrasenya \'"+contrasenya+"\': La contrasenya és vàlida";
+        return "La contrasenya és vàlida";
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Escriu una contrasenya: ");
         String contrasenya = scanner.nextLine();
-        System.out.println(validaContrasenya(contrasenya));
+        System.out.println("La contrasenya \'"+contrasenya+"\': "+validaContrasenya(contrasenya));
         scanner.close();
     }
 }
