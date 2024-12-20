@@ -20,7 +20,11 @@ public class Exercici0008 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introdueix un número: ");
         int numero = scanner.nextInt();
-        System.out.println("Nombres imparells entre 2 i "+numero+": "+generaImparells(numero));
+        if (generaImparells(numero).isEmpty()){
+            System.out.println("No hi ha nombres imparells entre 2 i "+numero);
+        } else {
+            System.out.println("Nombres imparells entre 2 i "+numero+": "+generaImparells(numero));
+        }
         scanner.close();
     }
 }
