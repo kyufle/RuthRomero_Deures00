@@ -15,31 +15,39 @@ public class Exercici0010 {
     }
 
     public static ArrayList<Integer> multiplicarPerDos(ArrayList<Integer> llista) {
-        ArrayList<Integer>resultatmultiplicar= new ArrayList<>();
-        for (int numbers : resultatmultiplicar){
-            resultatmultiplicar.add((numbers * 2));
+        ArrayList<Integer> multiplicarPerDos = new ArrayList<>();
+        for (int numbers : llista){
+            multiplicarPerDos.add(numbers*2);
         }
-        return resultatmultiplicar;
+        return multiplicarPerDos;
     }
 
     public static ArrayList<Integer> filtrarImparells(ArrayList<Integer> llista) {
-        /*
-            TODO: Resol aquí la funció
-        */
-        return new ArrayList<>();
+        ArrayList<Integer> llistaFiltrarImparells = new ArrayList<>();
+        for (int numbers : llista){
+            if (numbers%2!=0){
+                llistaFiltrarImparells.add(numbers);
+            }
+        }
+        return llistaFiltrarImparells;
     }
 
     public static ArrayList<Double> dividirPerDos(ArrayList<Integer> llista) {
-        /*
-            TODO: Resol aquí la funció
-        */
-        return new ArrayList<>();
+        ArrayList<Double> llistaDividirPerDos= new ArrayList<>();
+        for (int numbers : llista){
+            llistaDividirPerDos.add(numbers/2.0);
+        }
+        return llistaDividirPerDos;
     }
 
     public static void main(String[] args) {
-
-        /*
-            TODO: Resol aquí l'exercici
-        */
+        ArrayList<Integer> llistaAleatoria = generarNumerosAleatoris(10, 0, 99);
+        System.out.println("Llista inicial: " + llistaAleatoria);
+        ArrayList<Integer> llistaMultiplicada = multiplicarPerDos(llistaAleatoria);
+        System.out.println("Llista multiplicada per 2: " + llistaMultiplicada);
+        ArrayList<Integer> llistaImparells = filtrarImparells(llistaAleatoria);
+        System.out.println("Llista només amb números imparells: " + llistaImparells);
+        ArrayList<Double> llistaDividida = dividirPerDos(llistaImparells);
+        System.out.println("Llista imparells dividits per 2: " + llistaDividida);
     }
 }
