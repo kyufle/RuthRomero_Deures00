@@ -33,7 +33,7 @@ public class Exercici0010 {
     }
 
     public static ArrayList<Double> dividirPerDos(ArrayList<Integer> llista) {
-        ArrayList<Double> llistaDividirPerDos= new ArrayList<>();
+        ArrayList<Double> llistaDividirPerDos = new ArrayList<>();
         for (int numbers : llista){
             llistaDividirPerDos.add(numbers/2.0);
         }
