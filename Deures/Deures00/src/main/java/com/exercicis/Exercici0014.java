@@ -15,7 +15,7 @@ public class Exercici0014 {
         } else if (numMoviment == 2) {
             return "PAPER";
         }
-        return "TISORA";
+        return "TISORES";
     }
 
     public static String getPlayerMove(Scanner scanner) {
