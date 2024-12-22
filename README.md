@@ -24,7 +24,7 @@ Per executar un exercici específic des de la carpeta `Deures00` en Linux/Mac, u
 ./runTest.sh com.exercicis.ExerciciXXXX
 ```
 
-I per fer-lo en windows:
+## Windows
 ```bash
 ./runTest.ps1 com.exercicis.ExerciciXXXX
 ```
