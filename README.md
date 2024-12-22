@@ -28,4 +28,4 @@ Per executar un exercici específic des de la carpeta `Deures00` en Linux/Mac, u
 ```bash
 ./runTest.ps1 com.exercicis.ExerciciXXXX
 ```
-On **XXXX** ha de ser el número del exercici.
+On `XXXX` ha de ser el número del exercici.
