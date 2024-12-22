@@ -1,4 +1,4 @@
-# RuthRomero_Deures00# Projecte Deures00
+# RuthRomero_Deures00
 
 Aquest projecte conté exercicis pràctics i els seus tests corresponents per facilitar l'aprenentatge i la validació de les solucions proposades.
 
